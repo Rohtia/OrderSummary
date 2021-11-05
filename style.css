@@ -1,0 +1,151 @@
+	/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
+html {
+	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: 500;
+	background-color: hsl(225, 100%, 98%);
+	margin: 0;
+}
+
+body {
+	background: url(images/pattern-background-mobile.svg) no-repeat;
+	background-color: hsl(225, 100%, 94%);
+	margin: auto;
+	padding: 40px 0;
+	width: 375px;
+}
+
+main {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	background-color: white;
+	border-radius: 15px;
+}
+
+a:hover {
+	background-color: hsl(224, 23%, 55%);
+	color: hsl(225, 100%, 98%);
+}
+
+button:hover {
+	color: hsl(225, 100%, 94%);
+	background-color: hsl(223, 47%, 23%);
+}
+
+#head-img {
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.summary {
+	padding: 0 25px;
+}
+h1 {
+	font-weight: 900;
+}
+
+.desc {
+	font-weight: 500;
+	color: grey;
+	padding: 10px;
+}
+
+.plan {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	margin: 0 25px 30px 25px;
+	padding: 0 10px;
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 15px;
+	align-items: center;
+}
+.plan-name {
+	grid-column-start: 2;
+	font-weight: 700;
+}
+.price {
+	color: grey;
+	font-size: 15px;
+}
+
+.payNow {
+	width: 80%;
+	margin: auto;
+	color: white;
+	height: 50px;
+	border-radius: 10px;
+	font-weight: 900;
+	border: none;
+	background-color: hsl(245, 75%, 52%);
+}
+.cancel {
+	padding-bottom: 30px;
+	text-decoration: none;
+	color: grey;
+}
+
+@media (min-width: 500px) {
+	body {
+		background: url(images/pattern-background-desktop.svg) no-repeat;
+		background-color: hsl(225, 100%, 94%);
+		margin: auto;
+		padding: 40px 0;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	main {
+		width: 400px;
+	}
+}
+
+@media (min-width: 1440px) {
+	body {
+		background: url(images/pattern-background-desktop.svg) no-repeat;
+		background-size: 100vw;
+		background-color: hsl(225, 100%, 94%);
+		margin: auto;
+		padding: 40px 0;
+		width: 100vw;
+		height: 100vh;
+	}
+	main {
+		width: 550px;
+	}
+}
